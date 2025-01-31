@@ -42,6 +42,8 @@ argument_specs:
         type: "dict"
       prometheus_web_external_url:
         description: "External address on which prometheus is available. Useful when behind reverse proxy. Ex. `http://example.org/prometheus`"
+      prometheus_web_route_prefix:
+        description: "Prefix for the internal routes of web interface"
       prometheus_metrics_path:
         description: "Prometheus external metrics path"
         default: "/{{ (prometheus_web_external_url + '/metrics') | regex_replace('^(.*://)?(.*?)/') }}"
