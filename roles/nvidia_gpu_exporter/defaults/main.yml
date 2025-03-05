@@ -8,6 +8,11 @@ nvidia_gpu_exporter_web_listen_address: "0.0.0.0:9835"
 nvidia_gpu_exporter_web_telemetry_path: "/metrics"
 nvidia_gpu_exporter_web_config_file: ""
 
+# Experimental 
+nvidia_gpu_exporter_tls_server_config: {}
+nvidia_gpu_exporter_http_server_config: {}
+nvidia_gpu_exporter_basic_auth_users: {}
+
 nvidia_gpu_exporter_binary_install_dir: "/usr/local/bin"
 nvidia_gpu_exporter_system_group: "nvidia-gpu-exp"
 nvidia_gpu_exporter_system_user: "{{ nvidia_gpu_exporter_system_group }}"
