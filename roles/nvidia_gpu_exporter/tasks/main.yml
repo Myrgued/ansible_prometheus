@@ -49,7 +49,6 @@
     _common_system_user: "{{ nvidia_gpu_exporter_system_user }}"
     _common_system_group: "{{ nvidia_gpu_exporter_system_group }}"
     _common_config_dir: "{{ nvidia_gpu_exporter_config_dir }}"
-    # Experimental
     _common_tls_server_config: "{{ nvidia_gpu_exporter_tls_server_config }}"
     _common_http_server_config: "{{ nvidia_gpu_exporter_http_server_config }}"
     _common_basic_auth_users: "{{ nvidia_gpu_exporter_basic_auth_users }}"

@@ -6,9 +6,7 @@ nvidia_gpu_exporter_checksums_url: "https://github.com/{{ _nvidia_gpu_exporter_r
 
 nvidia_gpu_exporter_web_listen_address: "0.0.0.0:9835"
 nvidia_gpu_exporter_web_telemetry_path: "/metrics"
-nvidia_gpu_exporter_web_config_file: ""
 
-# Experimental 
 nvidia_gpu_exporter_tls_server_config: {}
 nvidia_gpu_exporter_http_server_config: {}
 nvidia_gpu_exporter_basic_auth_users: {}
