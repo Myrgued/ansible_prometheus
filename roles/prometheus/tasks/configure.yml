@@ -113,7 +113,8 @@
     group: "{{ prometheus_system_group }}"
     mode: 0640
     validate: "{{ prometheus_binary_install_dir }}/promtool check config %s"
-  no_log: "{{ false if (lookup('env', 'CI')) or (lookup('env', 'MOLECULE_PROVISIONER_NAME')) else true }}"
+  # no_log: "{{ false if (lookup('env', 'CI')) or (lookup('env', 'MOLECULE_PROVISIONER_NAME')) else true }}"
+    no_log: false
   notify:
     - reload prometheus
   become: true
